@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manhwa Blog | OtakuReads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="BLOG.css" />
+</head>
+<body class="manhwa-bg">
+  <header class="genre-header" style="background-image: url('https://image.webtoons.com/image/256/1072/906346_400x600_reqular_0.jpg');">
+    <nav class="nav-genre animated-nav">
+      <ul>
+        <li class="nav-now">Manhwa</li>
+        <li><a href="manhua.html">Manhua</a></li>
+        <li><a href="manga.html">Manga</a></li>
+      </ul>
+      <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+    </nav>
+    <div class="genre-overlay"></div>
+    <h1 class="genre-title animated-slide-in-kor">만화 (Manhwa)<span class="genre-sub">Korean Comics</span></h1>
+  </header>
+  <main>
+    <section class="blog-card manhwa-card" id="lookism">
+      <div class="image-container neon-border">
+        <img src="IMAGES\Manhwa\l1.jpg" alt="Lookism" />
+      </div>
+      <div class="card-content">
+        <h2 class="post-title manhwa-title">Lookism (룩이즘)</h2>
+        <div class="meta manhwa-meta">Published: Aug 18, 2025 | Tags: Drama, School, Korean</div>
+        <p>
+          <b>Lookism</b> is a Korean webtoon about a misfit who wakes up in a handsome body. Its raw look at self-image, school society, and social status makes it a must-read.
+        </p>
+        <div class="comments-section">
+          <h3>댓글 Comments</h3>
+          <form class="comment-form" data-section="lookism">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <textarea name="message" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post</button>
+          </form>
+          <div class="comment-list" id="comments-lookism"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="manhwa-title" style="margin: 2.2em 0 1em;">Other Top Manhwa</h2>
+      <div class="more-manhwa-list">
+        <div class="more-card manhwa-card">
+          <div class="image-container neon-border">
+            <img src="IMAGES\Manhwa\Solo.jpg" alt="Solo Leveling" />
+          </div>
+          <h3 class="manhwa-title">Solo Leveling</h3>
+          <p>Watch Sung Jin-Woo rise from weakest hunter to world’s most powerful in this thrilling fantasy.</p>
+        </div>
+        <div class="more-card manhwa-card">
+          <div class="image-container neon-border">
+            <img src="IMAGES\Manhwa\tog.jpg" alt="Tower of God" />
+          </div>
+          <h3 class="manhwa-title">Tower of God</h3>
+          <p>Bam’s mysterious climb full of intrigue, magic, betrayals, and friendships.</p>
+        </div>
+        <div class="more-card manhwa-card">
+          <div class="image-container neon-border">
+            <img src="IMAGES\Manhwa\orv.jpg" alt="Omniscient Reader" />
+          </div>
+          <h3 class="manhwa-title">Omniscient Reader’s Viewpoint</h3>
+          <p>A meta-fantasy about a reader foreseeing an apocalypse plot unfolding in real life.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 OtakuReads</p>
+    <button id="scroll-top">↑ Top</button>
+  </footer>
+  <script src="BLOG.js"></script>
+</body>
+</html>

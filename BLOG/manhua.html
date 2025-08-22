@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manhua Blog | OtakuReads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="BLOG.css" />
+</head>
+<body class="manhua-bg">
+  <header class="genre-header" style="background-image: url('https://m.media-amazon.com/images/I/81c1EI5NwGL._AC_UF1000,1000_QL80_.jpg');">
+    <nav class="nav-genre animated-nav">
+      <ul>
+        <li><a href="manhwa.html">Manhwa</a></li>
+        <li class="nav-now">Manhua</li>
+        <li><a href="manga.html">Manga</a></li>
+      </ul>
+      <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+    </nav>
+    <div class="genre-overlay"></div>
+    <h1 class="genre-title animated-slide-in-ch">漫画 (Manhua)<span class="genre-sub">Chinese Comics</span></h1>
+  </header>
+  <main>
+    <section class="blog-card manhua-card" id="demonic-emperor">
+      <div class="image-container ink-splash">
+        <img src="IMAGES\Manhua\DP.jpg" alt="Demonic Emperor" />
+      </div>
+      <div class="card-content">
+        <h2 class="post-title manhua-title">Demonic Emperor (魔皇)</h2>
+        <div class="meta manhua-meta">Published: Aug 18, 2025 | Tags: Fantasy, Martial Arts, Revenge</div>
+        <p>
+          Born into a hostile martial world, Zhuo Yifan fights to reclaim his power and avenge his past.
+        </p>
+        <div class="comments-section">
+          <h3>评论 Comments</h3>
+          <form class="comment-form" data-section="demonic-emperor">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <textarea name="message" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post</button>
+          </form>
+          <div class="comment-list" id="comments-demonic-emperor"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="manhua-title" style="margin: 2.2em 0 1em;">Other Top Manhua</h2>
+      <div class="more-manhua-list">
+        <div class="more-card manhua-card">
+          <div class="image-container ink-splash">
+            <img src="IMAGES\Manhua\soul land.jpg" alt="Soul Land" />
+          </div>
+          <h3 class="manhua-title">Soul Land</h3>
+          <p>Adventure in a world of spirit beasts and cultivation-focused adventure.</p>
+        </div>
+        <div class="more-card manhua-card">
+          <div class="image-container ink-splash">
+            <img src="IMAGES\Manhua\tales.jpg" alt="Tales of Demons and Gods" />
+          </div>
+          <h3 class="manhua-title">Tales of Demons and Gods</h3>
+          <p>When all seems lost, Nie Li rewinds time to rewrite destiny.</p>
+        </div>
+        <div class="more-card manhua-card">
+          <div class="image-container ink-splash">
+            <img src="IMAGES\Manhua\hero return.jpg" alt="Heroic Return" />
+          </div>
+          <h3 class="manhua-title">Heroic Return</h3>
+          <p>Urban horror and supernatural suspense twist into a thrilling ride.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 OtakuReads</p>
+    <button id="scroll-top">↑ Top</button>
+  </footer>
+  <script src="BLOG.js"></script>
+</body>
+</html>

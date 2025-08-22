@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manga Blog | OtakuReads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="BLOG.css" />
+</head>
+<body class="manga-bg">
+  <header class="genre-header" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/2/22/One_Piece%2C_volume_1.jpg');">
+    <nav class="nav-genre animated-nav">
+      <ul>
+        <li><a href="manhwa.html">Manhwa</a></li>
+        <li><a href="manhua.html">Manhua</a></li>
+        <li class="nav-now">Manga</li>
+      </ul>
+      <button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+    </nav>
+    <div class="genre-overlay"></div>
+    <h1 class="genre-title animated-slide-in-jp">マンガ (Manga)<span class="genre-sub">Japanese Comics</span></h1>
+  </header>
+  <main>
+    <section class="blog-card manga-card" id="one-piece">
+      <div class="image-container panel-effect">
+        <img src="IMAGES\Manga\OP.jpg" alt="One Piece" />
+      </div>
+      <div class="card-content">
+        <h2 class="post-title manga-title">One Piece (ワンピース)</h2>
+        <div class="meta manga-meta">Published: Aug 16, 2025 | Tags: Adventure, Shonen, Pirate</div>
+        <p>
+          Monkey D. Luffy and the Straw Hats sail across the seas in pursuit of the legendary treasure, facing thrill and danger.
+        </p>
+        <div class="comments-section">
+          <h3>コメント Comments</h3>
+          <form class="comment-form" data-section="one-piece">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <textarea name="message" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post</button>
+          </form>
+          <div class="comment-list" id="comments-one-piece"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="manga-title" style="margin: 2.2em 0 1em;">Other Must-Read Manga</h2>
+      <div class="more-manga-list">
+        <div class="more-card manga-card">
+          <div class="image-container panel-effect">
+            <img src="IMAGES\Manga\Naruto.jpg" alt="Naruto" />
+          </div>
+          <h3 class="manga-title">Naruto</h3>
+          <p>A ninja's journey to master his destiny, filled with friendships and fierce battles.</p>
+        </div>
+        <div class="more-card manga-card">
+          <div class="image-container panel-effect">
+            <img src="IMAGES\Manga\demon slayer.jpg" alt="Demon Slayer" />
+          </div>
+          <h3 class="manga-title">Demon Slayer</h3>
+          <p>Emotionally gripping tale of courage and family set in decadant Taisho-era Japan.</p>
+        </div>
+        <div class="more-card manga-card">
+          <div class="image-container panel-effect">
+            <img src="IMAGES\Manga\slam dunk.jpg" alt="Slam Dunk" />
+          </div>
+          <h3 class="manga-title">Slam Dunk</h3>
+          <p>Iconic basketball manga expertly blending sport and comedy.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 OtakuReads</p>
+    <button id="scroll-top">↑ Top</button>
+  </footer>
+  <script src="BLOG.js"></script>
+</body>
+</html>
