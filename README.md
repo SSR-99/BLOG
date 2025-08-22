@@ -1,0 +1,1 @@
+T file consists of the basic codes of html css and js which are used in creating the blog. And along with them some images are added based on the content of the blog, futher changes can be made based on the intres of the blog.
