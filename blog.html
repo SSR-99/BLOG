@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tech Blog</title>
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <h1>My Tech Blog</h1>
+    <button id="themeToggle" title="Toggle Dark Mode">🌙</button>
+  </div>
+
+  <p>Articles on Web Development & JavaScript</p>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search blogs..." />
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="Web">Web</option>
+      <option value="JavaScript">JavaScript</option>
+    </select>
+  </div>
+</header>
+
+<!-- BLOG LIST -->
+<section id="blogList" class="blog-container"></section>
+
+<!-- BLOG DETAILS -->
+<section id="blogDetails" class="blog-details hidden">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 id="detailTitle"></h2>
+  <img id="detailImage" />
+  <p id="detailContent"></p>
+
+  <div class="comment-box">
+    <h3>Comments</h3>
+    <input id="nameInput" placeholder="Your name" />
+    <textarea id="commentInput" placeholder="Write a comment"></textarea>
+    <button onclick="addComment()">Add Comment</button>
+    <div id="comments"></div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights">
+  <div class="highlight-card fade-up">
+    <h3>🚀 Modern Web</h3>
+    <p>Built with clean HTML, CSS Grid & Vanilla JS.</p>
+  </div>
+  <div class="highlight-card fade-up">
+    <h3>⚡ Fast & Responsive</h3>
+    <p>Optimized layouts with smooth transitions.</p>
+  </div>
+  <div class="highlight-card fade-up">
+    <h3>💡 Learning Driven</h3>
+    <p>Every blog shares practical dev insights.</p>
+  </div>
+</section>
+
+<script src="blog.js"></script>
+</body>
+</html>
